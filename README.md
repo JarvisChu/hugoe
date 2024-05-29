@@ -1,0 +1,2 @@
+# hugoe
+hugo encrypt
