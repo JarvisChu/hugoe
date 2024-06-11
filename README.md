@@ -1,11 +1,19 @@
 # hugoe
 Copy From: https://github.com/hotjuicew/hugoArticleEncryptor
 
+
+## How to build
+
+```bash
+# hugoe will generated
+go build .
+```
+
 ## Usage
 
-Add Code snippets to your articles that need encrypted.
+### 1. Add Code snippets to your articles that need encrypted.
 
-```
+```markdown
 <!--more-->
 
 {{< secret "123456" >}}
@@ -18,7 +26,7 @@ Put YOUR Article Content Here
 
 example
 
-```
+```markdown
 ---
 title: "My First Post"
 date: "2024-04-02 12:00:00"
@@ -40,3 +48,8 @@ In this tutorial, commands that you enter will start with the "$" prompt. The ou
 
 {{< /secret >}}
 ```
+
+### 2. Run `hugoe` instead of `hugo`
+
+Using `hugoe` instead of `hugo` to generate public html files
+
